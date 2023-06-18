@@ -1,0 +1,30 @@
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Connect 4 Game!</h1>
+  <h3>Directions</h3>
+  <ul>
+    <li>Player 1 and 2 select a color using the color picker.</li>
+    <li>Players take turns clicking on a column to drop their colored piece.</li>
+    <li>The first player to connect four pieces in a row, column, or diagonal wins!</li>
+    <li>Restart anytime to start over with the same colors or choose new ones!</li>
+  </ul>
+  <div id="color-picker">
+    <label for="player1-color">Player 1 Color:</label>
+    <input type="color" id="player1-color" value="#cccccc">
+    <label for="player2-color">Player 2 Color:</label>
+    <input type="color" id="player2-color" value="#cccccc">
+    <button id="restart-game">Restart Game</button>
+  </div>
+  <div id="game">
+    <table id="board"></table>
+  </div>
+
+  <script src="connect4.js"></script>
+</body>
+</html>

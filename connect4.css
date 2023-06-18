@@ -1,0 +1,78 @@
+/* game board table */
+#board td {
+  width: 68px;
+  height: 64px;
+  border: solid 2px #666;
+  background-color: #f8f8f8;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+.piece {
+  border-radius: 50%; 
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+}
+
+/* make pieces red/blue as default colors, depending on player 1/2 piece */
+.piece.p1 {
+  background-color: #cc0033;
+}
+
+.piece.p2 {
+  background-color: #0066cc;
+}
+
+/* column-top is table row of clickable areas for each column */
+#column-top td {
+  border: dashed 2px lightgray;
+}
+
+#column-top td:hover {
+  background-color: #ffd700;
+}
+
+/* player color picker */
+#player1-color,
+#player2-color {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+/* Restart Game button */
+#restart-game {
+  margin-left: 20px;
+  margin-bottom: 5px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  font-size: 14px;
+  width: 105px;
+  height: 43px;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#restart-game:hover {
+  background-color: #cc0033;
+}
+
+.winning-cell {
+  outline: 4px solid #00ff00;
+}
+
+/* CSS class to represent the highlighted cells */
+.piece.highlight {
+  outline: 4px solid yellow;
+}
+
